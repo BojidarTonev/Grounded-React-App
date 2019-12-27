@@ -1,0 +1,64 @@
+fieldset {
+    padding: var(--contact-form-wrapper-fieldset-padding, 3em);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--contact-form-fieldset-background, black);
+    border-color: var(--contact-form-fieldset-border-color, #a39d87);
+}
+
+legend {
+    font-size: var(--contact-form-legend-font-size, 2.3em);
+    padding: 0 1.3em;
+    border: 3px solid #a39d87;
+    border-radius: 0.5em;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    background: var(--contact-form-background, rgb(0, 0, 0, 0.7));
+    padding: var(--contact-form-padding, 3em);
+    width: var(--contact-form-min-width, 35em);
+    border-radius: 2em;
+}
+
+.form label {
+    margin: 0.7em 0 0.7em 0;
+}
+
+.form input {
+    width: var(--contact-form-input-min-width, 22em);
+    height: var(--contact-form-input-min-height, 2em);
+    border-radius: 0.5em;
+    border: 1px solid black;
+    background: var(--contact-form-input-background, #807171);
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    background: var(--contact-form-button-background, black);
+    height: var(--contact-form-button-min-height, 2em);
+    width: var(--contact-form-button-width, 40%);
+    border-radius: 0.5em;
+    color: var(--contact-form-button-text-color, #910205);
+    border: 2px solid #910205;
+    font-size: var(--contact-form-button-font-size, 1em);
+    margin: 2.7em auto 0 auto;
+}
+
+/*TRANSITIONS*/
+
+.login-register-buttons {
+    transition: all .3s ease-in-out;
+}
+
+/*TRANSITIONS*/

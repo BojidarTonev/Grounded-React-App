@@ -1,0 +1,76 @@
+.index hr {
+    width: 95%;
+}
+
+.index-goals-wrapper {
+    display: flex;
+}
+
+.goal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 14em;
+    margin: 0 1.2em;
+    color: black;
+
+    background: rgb(163, 157, 135, 0.4);
+    border: 0.3em solid black;
+}
+
+.goal-card p {
+    padding: 0 !important;
+}
+
+.goal-card i {
+    font-size: 3em;
+    background: rgb(145, 2, 5, 1);
+    border: 3px solid black;
+    padding: 0.3em 0.4em;
+    border-radius: 3em;
+    margin-bottom: 0.3em;
+}
+
+.main-goal-card {
+    height: 18em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 1.2em;
+    color: black;
+    margin-bottom: 4em;
+
+    background: rgb(163, 157, 135, 0.4);
+    border: 0.3em solid black;
+}
+
+.main-goal-card i {
+    font-size: 6em;
+    background: rgb(145, 2, 5, 1);
+    border: 3px solid black;
+    padding: 0.1em;
+    border-radius: 70%;
+    color: black;
+    margin-bottom: 0.1em;
+
+    transition: all .3s ease-in-out;
+}
+
+#spinning-disc:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+    background: rgb(123, 32, 179, 0.7);
+}
+
+#spinning-disc {
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    to{ transform: rotate(360deg); }
+}

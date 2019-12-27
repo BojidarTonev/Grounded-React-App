@@ -1,0 +1,22 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description h2 {
+    background: black;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #910205; 
+}
+
+.description span {
+    max-width: var(--about-description-max-characters, 65ch);
+    vertical-align: middle; 
+    text-align: center; 
+    background: var(--about-description-background-color, black);
+    margin-bottom: 2em;
+
+    
+}

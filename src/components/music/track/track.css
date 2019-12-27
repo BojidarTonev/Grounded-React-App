@@ -1,0 +1,85 @@
+.track-card-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-card {
+    width: 90%;
+    height: 3em;
+    background: black;
+    margin: 1em 0;;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-name {
+    background: rgb(145, 2, 5, 0.7);
+    height: 3.5em;
+    width: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-right: 5px solid gray;
+    margin-left: 1em;
+
+    transition: all .1s ease-in-out;
+}
+
+.author-name:hover {
+    background: black;
+    border-right: 5px solid rgb(145, 2, 5, 1);
+    font-size: 1.1em;
+
+    cursor: pointer;
+}
+
+.track-info-wrapper .line {
+    background: white;
+    width: 70%;
+    height: 2em;
+}
+
+.track-info-wrapper i {
+    font-size: 1.3em !important;
+    margin: 0 1em;
+    cursor: pointer;
+
+    transition: all .3s ease-in-out;
+}
+
+.play {
+    color: rgb(145, 2, 5, 1);
+}
+
+.play:hover {
+    cursor: pointer;
+}
+
+.song-duration {
+    height: 3em;
+    width: 3em;
+    margin-right: 3em;
+    margin-top: 1.3em;
+}
+
+.fadeOut{
+    opacity:0;
+    width:0;
+    height:0;
+    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+
+}
+.fadeIn{
+    opacity:1;
+    width:100px;
+    height:100px;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+
+}
+

@@ -1,0 +1,110 @@
+/*
+  ================== Transitions ===================
+*/
+.site-nav li:nth-child(1) { transition-delay: 0.1s }
+.site-nav li:nth-child(2) { transition-delay: 0.2s }
+.site-nav li:nth-child(3) { transition-delay: 0.3s }
+.site-nav li:nth-child(4) { transition-delay: 0.4s }
+.site-nav li:nth-child(5) { transition-delay: 0.5s }
+
+.site-nav a {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.site-nav a:hover i:before {
+    color: #8A0509;
+    transition: color 0.3s ease-in-out;
+}
+
+.artist-info-items a {
+    transition: background 0.4s ease-in-out, color 0.3s ease-in-out;
+}
+
+.artist-info-items a:hover {
+    background: black;
+    color: #8A0509;
+}
+
+.artist-info-items a:hover i:before {
+    color: #8A0509;
+    transition: color 0.3s ease-in-out;
+}
+
+.content-group:hover {
+    color: #8A0509;
+    background: black;
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+button[type='submit']:hover {
+    background: #8A0509;
+    color: black;
+    border: 3px solid black;
+    transition: background 0.5s ease-in-out, color 0.3s ease-in-out, border-color 0.5s ease-in-out;
+}
+
+.fast-icon-links li:hover {
+    background: black;
+    color: #910205;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.fast-icon-links a:hover {
+    color: #910205;
+    transition: color 0.5s ease-in-out;
+}
+
+.event a:hover {
+    color: black;
+    border: 0.3em solid #910205;
+    transition: border-color 1s ease-in-out;
+}
+
+.some-link > a:hover strong{
+    transform: translateX(-2em);
+    transition: color 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.site-title a:hover {
+    color: #8A0509;
+    border-bottom: 0.3em solid black;
+
+    transform: translateY(0.5em);
+    transition: all .5s ease-in-out;
+}
+
+
+
+/*Burger transitions*/
+
+.burger div {
+    transition: all 0.5s ease;
+}
+
+.nav-active {
+    transform: translateX(0%) !important; 
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-9px, -5px);
+}
+
+/*Burger transitions*/
+
+
+.event-card > .some-link:hover strong{
+    transform: translateX(-2em);
+    transition: all 0.3s ease-in;
+}
+
+.event-card:hover > .some-link {
+    
+}

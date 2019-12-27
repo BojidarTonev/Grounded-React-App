@@ -1,0 +1,48 @@
+.radio-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.4em;
+    width: 7em;
+    height: 2.5em;
+    background: black;
+    border-radius: 0.5em;
+    border: 3px solid rgba(30, 130, 76, 1);
+
+    position: relative;
+
+    transition: all .3s ease-in-out;
+}
+
+.declined {
+    border: 3px solid rgb(145, 2, 5);
+    border-radius: 0.8em;
+}
+
+.declined:hover {
+    background: rgba(145, 2, 5, 0.3) !important;
+    border-color: rgb(145, 2, 5) !important;
+}
+
+.radio-button:hover {
+    background: rgba(30, 130, 76, 0.3);
+    border: 3px solid rgba(30, 130, 76, 1);
+    border-radius: 0.8em;
+    color: black;
+
+    width: 7.5em;
+    height: 2.8em;
+}
+
+.radio-button label i {
+    margin-left: 0.7em;
+    color: rgba(30, 130, 76, 1);
+}
+
+.declined label i {
+    color: rgb(145, 2, 5);
+}
+
+.music-search-bar input[type='radio'] {
+    display: none;
+}

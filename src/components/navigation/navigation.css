@@ -1,0 +1,140 @@
+.site-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: black;
+}
+
+.site-nav > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0.6em;
+    align-self: flex-end;
+}
+
+.site-nav li {
+    list-style: none outside;
+    display: block;
+    padding: 0 3.5em;
+}
+
+.site-nav i {
+    font-size: 25px;
+    padding: 0 0.5em;
+    color: black;
+}
+
+.site-nav a {
+    color: black;
+    border-radius: 0.1em;
+    padding: 0.3em 0.6em 0.3em 0.6em;
+    background: gray;
+}
+
+.site-nav a:hover {
+    background: black;
+    color: #8A0509;
+}
+
+/* .burger{
+    float: right;
+    display: none;
+}
+
+.burger div {
+    width: 1.5em;;
+    height: 0.2em;
+    background: #8A0509;
+    margin: 7px;
+} */
+
+@media screen and (max-width: 1024px) {
+    .index-section {
+        margin: 0 100px;
+    }
+
+    .events-slider {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .site-nav ul {
+        border-radius: 0.5em;
+        position: absolute;
+        right: 0px;
+        height: 30vh;
+        top: -16em;   
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+        max-height: 18em;   
+    }
+    .site-nav li {
+        margin-bottom: 2em;
+    }
+    .site-nav a {
+        padding: 0.5em;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .events-slider {
+        width: 100% !important;
+    }
+
+    .index-section {
+        margin: 0 70px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .site-nav ul {
+        top: -18em;  
+        max-height: 20em; 
+    }
+    .site-nav li {
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav ul {
+        top: -19.8em;  
+    }
+    .site-nav a {
+        padding: 0.7em;
+    }
+    .site-nav li {
+        margin-bottom: 2em;
+    }
+
+    .index-header h2 {
+        text-align: center; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .site-nav ul {
+        top: -19.5em; 
+        width: 18em;  
+        max-height: 20em;
+    }
+    
+    .site-nav a {
+        margin-bottom: 0.9em;
+    }
+
+    .index-header h2 {
+        text-align: center; 
+    }
+}

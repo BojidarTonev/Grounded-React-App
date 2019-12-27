@@ -1,0 +1,15 @@
+
+
+.music-content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.spinning-loader i {
+    opacity: 0;
+}
+

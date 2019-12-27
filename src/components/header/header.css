@@ -1,0 +1,37 @@
+  .site-header {
+    height: 400px;
+    background: url('../../static/images/navigation-background.gif') no-repeat;
+    background-size: cover;
+    color: white;
+    position:relative;
+}
+
+.site-title {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.site-title a {
+    display: block;
+    padding: 0.5em;
+    color: black;
+    font-size: 2.5em !important;
+    border-bottom: 0em solid black;
+
+    transition: all .5s ease-in-out;
+}
+
+.header-logo {
+    width: 200px;
+    height: 166px;
+    position:relative;
+    top: -86px;
+}
+
+.login-register-buttons {
+    float: right;
+    display: flex;
+    padding-left: 20em;
+}
