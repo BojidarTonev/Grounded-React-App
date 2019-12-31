@@ -27,14 +27,31 @@ class MusicSearchForm extends Component {
     });
   }
 
+  handleRadioStyling = function() {
+    let radioBtnArr = document.getElementsByName('button'); 
+    radioBtnArr.forEach(btn => {
+      let labelIcon = btn.nextSibling.children[0];
+      let parentDiv = btn.parentElement;
+      btn.checked ? parentDiv.classList.remove("declined") : parentDiv.classList.add("declined");
+      if(btn.checked) {
+        labelIcon.classList.add("fa-check");
+        labelIcon.classList.remove("fa-times");
+      }
+      else {
+        labelIcon.classList.remove("fa-check");
+        labelIcon.classList.add("fa-times");
+      }
+    });
+  }
+
   render() {
     return (
       <div className="music-search-bar">
         <form action="get">
           <input type="text" placeholder="search..." />
-          <RadioButton title="Artists"/>
-          <RadioButton title="Albums" />
-          <RadioButton title="Tracks" />
+          <RadioButton title="Artists" name="button" value="Artists" styleChangedHandler={this.handleRadioStyling} />
+          <RadioButton title="Albums" name="button" value="Albums" styleChangedHandler={this.handleRadioStyling} />
+          <RadioButton title="Tracks" name="button" value="Tracks" styleChangedHandler={this.handleRadioStyling} />
           <button type="submit" className="search-events-button" onClick={this.handleClick.bind(this)}>
             <i class="fas fa-search"></i>
           </button>

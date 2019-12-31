@@ -95,7 +95,7 @@ const validators = yup.object({
   rePassword: yup
     .string("Re-password must be a string")
     .required("Re-password is requried!")
-    .oneOf([yup.ref("password"), ""], "Password dont match!")
+    .oneOf([yup.ref("password"), ""], "Passwords dont match!")
 });
 
 const schema = yup.object().shape(validators);

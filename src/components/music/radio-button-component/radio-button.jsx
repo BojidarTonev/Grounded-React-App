@@ -9,21 +9,22 @@ class RadioButton extends Component {
         }
     }
 
-    toggleClass() {
-        this.setState({active:!this.state.active})
+    toggleClass(e) {
+        let radButton = e.currentTarget.children[0]; 
+        radButton.checked = !radButton.checked;
+        this.setState({active: radButton.checked});
+        console.log('state: ' + this.state.active);
+        console.log('checked:' + radButton.checked);
+        this.props.styleChangedHandler();
     }
 
     render(){
-        let {title} = this.props;
-        let radioClass = ["radio-button"];
-        if(this.state.active) {
-            radioClass.push("declined")
-        }
-
+        let {title, value, name, styleChangedHandler} = this.props;
+        styleChangedHandler();
         return(
-            <div className={radioClass.join(' ')} onClick={this.toggleClass.bind(this)}>
-                <input type="radio" value="artists" name="artists" id="artists-radio"/>
-                <label for="artists-radio">{title}<i className={this.state.active ? "fas fa-times" : "fas fa-check"}></i></label>
+            <div className="radio-button declined" onClick={this.toggleClass.bind(this)}>
+                <input type="radio" value={value} name={name} />
+                <label for="artists-radio">{title}<i className="fas fa-times"></i></label>
             </div>
         )
     }
