@@ -5,6 +5,15 @@ const artistSchema = new mongoose.Schema({
         type: String
     },
     age: {
+        type: Number
+    },
+    bio: {
+        type: String
+    },
+    imageUrl: {
+        type: String
+    },
+    memberSince: {
         type: String
     }
 })
