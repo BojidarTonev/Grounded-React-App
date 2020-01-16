@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     bottom: 0;
-    background: black;
+    background: var(--black-color, red);
 }
 
 .site-nav > ul {
@@ -21,18 +21,18 @@
 .site-nav i {
     font-size: 25px;
     padding: 0 0.5em;
-    color: black;
+    color: var(--black-color, red);
 }
 
 .site-nav a {
-    color: black;
+    color: var(--black-color, red);
     border-radius: 0.1em;
     padding: 0.3em 0.6em 0.3em 0.6em;
     background: gray;
 }
 
 .site-nav a:hover {
-    background: black;
+    background: var(--black-color, red);
     color: #8A0509;
 }
 
@@ -68,7 +68,7 @@
         right: 0px;
         height: 30vh;
         top: -16em;   
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(var(--var(--black-color, red)-color,red), 0.7);
         display: flex;
         flex-direction: column;
         align-items: center;

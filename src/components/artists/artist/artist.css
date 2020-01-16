@@ -22,7 +22,7 @@
 }
 
 .artist-card-main img:hover {
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(var(--black-color, red), 0.5)
 }
 
 .artist-links {

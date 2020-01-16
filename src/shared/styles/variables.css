@@ -6,4 +6,14 @@
     --font-size-body-huge: 20px;
     
     --layout-main-width: 70em;
+
+    /*Main colors in project*/
+    --dark-red-color : rgb(145, 2, 5);
+    --gray-color: rgb(163, 157, 135);
+    --black-color: rgb(0, 0, 0);
+
+    /*Transparent colors in project*/
+    --black-transparent-color: 0, 0, 0;
+    --gray-transparent-color: 163, 157, 135;
+    --dark-red-transparent-color: 145, 2, 5;
 }

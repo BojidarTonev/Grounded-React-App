@@ -12,9 +12,9 @@
     height: 25em;
     margin-top: -9em; /* set to a negative number 1/2 of your height*/
     margin-left: -15em; /*set to a negative number 1/2 of your width */
-    border: 3px solid rgb(145, 2, 5);
+    border: 3px solid var(--dark-red-color, red);
     border-radius: 1em;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(var(--black-transparent-color), 0.8);
     pointer-events: auto;
     filter: blur(0px) grayscale(0%) !important;
     opacity: 0;
@@ -26,18 +26,19 @@
     padding: .8em 5em;
     margin-top: -1em;
     border-radius: .5em;
-    border: 3px solid rgb(145, 2, 5);
-    color: rgb(145, 2, 5);
-    background-color: black;
+    border: 3px solid var(--black-color, red);
+    color: var(--black-color, red);
+    background-color: var(--dark-red-color, red);
     font-size: .8em;
+    font-weight: 1000;
 
     transition: all .2s ease-in-out;
 }
 
 .event-details-modal-wrapper button:hover {
-    border: 3px solid black;
-    background: black;
-    color: rgb(145, 2, 5);
+    border: 3px solid var(--dark-red-color, red);
+    background: var(--black-color, red);
+    color: var(--dark-red-color, red);
 }
 
 .event-details-body {
@@ -48,7 +49,7 @@
 .event-details-body img {
     width: 12em !important;
     height: 11em !important;
-    border: .3em solid rgb(145, 2, 5);
+    border: .3em solid var(--dark-red-color, red);
     border-radius: .5em;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .date-info > span {
-    background: black;
+    background: var(--black-color, red);
     color: yellow;
     margin: .5em 0 0 22em;
     padding: .2em .5em!important;

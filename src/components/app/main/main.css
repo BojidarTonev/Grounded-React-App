@@ -11,7 +11,7 @@
     border-bottom: 3px solid #a39d87;
     margin-top: 1em;
 
-    background: black;
+    background: var(--black-color, red);
 }
 
 .site-main-description p {
@@ -23,7 +23,7 @@
 hr {
     margin: 2em 0;
     height: 0.4em;
-    background: #910205;
-    border: 0.13em solid black;
+    background: var(--dark-red-color, red);
+    border: 0.13em solid var(--black-color, red);;
     width: 90%;
 }

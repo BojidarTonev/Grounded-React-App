@@ -14,10 +14,10 @@
     text-align: center;
     height: 14em;
     margin: 0 1.2em;
-    color: black;
+    color: var(--black-color, red);
 
-    background: rgb(163, 157, 135, 0.4);
-    border: 0.3em solid black;
+    background: rgb(var(--gray-transparent-color), 0.4);
+    border: 0.3em solid var(--black-color, red);
 }
 
 .goal-card p {
@@ -26,8 +26,8 @@
 
 .goal-card i {
     font-size: 3em;
-    background: rgb(145, 2, 5, 1);
-    border: 3px solid black;
+    background: var(--dark-red-color, red);
+    border: 3px solid var(--black-color, red);
     padding: 0.3em 0.4em;
     border-radius: 3em;
     margin-bottom: 0.3em;
@@ -42,20 +42,20 @@
     align-items: center;
     text-align: center;
     margin: 0 1.2em;
-    color: black;
+    color: var(--black-color, red);
     margin-bottom: 4em;
 
-    background: rgb(163, 157, 135, 0.4);
-    border: 0.3em solid black;
+    background: rgb(var(--gray-transparent-color, red), 0.4);
+    border: 0.3em solid var(--black-color, red);
 }
 
 .main-goal-card i {
     font-size: 6em;
-    background: rgb(145, 2, 5, 1);
-    border: 3px solid black;
+    background: var(--dark-red-color, red);
+    border: 3px solid var(--black-color, red);
     padding: 0.1em;
     border-radius: 70%;
-    color: black;
+    color: var(--black-color, red);
     margin-bottom: 0.1em;
 
     transition: all .3s ease-in-out;

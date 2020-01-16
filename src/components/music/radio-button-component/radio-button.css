@@ -5,7 +5,7 @@
     margin: 0 1.4em;
     width: 7em;
     height: 2.5em;
-    background: black;
+    background: var(--black-color, red);;
     border-radius: 0.5em;
     border: 3px solid rgba(30, 130, 76, 1);
 
@@ -15,20 +15,20 @@
 }
 
 .declined {
-    border: 3px solid rgb(145, 2, 5);
+    border: 3px solid var(--dark-red-color, red);
     border-radius: 0.8em;
 }
 
 .declined:hover {
-    background: rgba(145, 2, 5, 0.3) !important;
-    border-color: rgb(145, 2, 5) !important;
+    background: rgba(var(--dark-red-color, red), 0.3) !important;
+    border-color: var(--dark-red-color, red) !important;
 }
 
 .radio-button:hover {
     background: rgba(30, 130, 76, 0.3);
     border: 3px solid rgba(30, 130, 76, 1);
     border-radius: 0.8em;
-    color: black;
+    color: var(--black-color, red);
 
     width: 7.5em;
     height: 2.8em;
@@ -40,7 +40,7 @@
 }
 
 .declined label i {
-    color: rgb(145, 2, 5);
+    color: var(--dark-red-color, red);
 }
 
 .music-search-bar input[type='radio'] {

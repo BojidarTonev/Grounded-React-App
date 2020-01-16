@@ -10,12 +10,12 @@
 }
 
 .music-search-bar input[type='text'] {
-    background: rgb(0, 0, 0, 0.6);
+    background: rgba(var(--black-transparent-color), 0.6);
     padding: 0.4em 2.5em;
     margin: 0 2em 0 5em;
-    border: 2px solid rgb(145, 2, 5);
+    border: 2px solid var(--dark-red-color, red);
     border-radius: 1em;
-    color: rgb(163, 157, 135);
+    color: var(--gray-color, red);
     width: 16em;
     height: 2.5em;
 }

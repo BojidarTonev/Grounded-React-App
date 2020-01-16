@@ -9,7 +9,7 @@
 .track-card {
     width: 90%;
     height: 3em;
-    background: black;
+    background: var(--black-color, red);
     margin: 1em 0;;
 
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .author-name {
-    background: rgb(145, 2, 5, 0.7);
+    background: rgb(var(--dark-red-transparent-color), 0.7);
     height: 3.5em;
     width: 8em;
     display: flex;
@@ -32,8 +32,8 @@
 }
 
 .author-name:hover {
-    background: black;
-    border-right: 5px solid rgb(145, 2, 5, 1);
+    background: var(--black-color, red);
+    border-right: 5px solid var(--dark-red-color, red);
     font-size: 1.1em;
 
     cursor: pointer;
@@ -54,7 +54,7 @@
 }
 
 .play {
-    color: rgb(145, 2, 5, 1);
+    color: var(--dark-red-color, red);
 }
 
 .play:hover {

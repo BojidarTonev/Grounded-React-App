@@ -1,5 +1,5 @@
 .site-footer {
-    border-top: 1.7em solid black;
+    border-top: 1.7em solid var(--black-color, red);
     height: 9em;
     background: url('../../static/images/footer-image.gif') center center;
     margin-top: 5em;
@@ -7,7 +7,7 @@
 
 .footer-section span{
     margin-left: 6em;
-    background-color: black;
+    background-color: var(--black-color, red);
 }
 
 .footer-section {
@@ -24,15 +24,15 @@
 .subsribe p {
     padding: 0;
     margin: 0;
-    background: black;
+    background: var(--black-color, red);
     margin-bottom: 0.5em;
     font-size: 0.8em;
 }
 
 .subsribe input {
     border-radius: 0.5em;
-    background: black;
-    border: 1px solid #910205; 
-    color: #a39d87;
+    background: var(--black-color, red);
+    border: 1px solid var(--dark-red-color, red); 
+    color: var(--gray-color, red);
     padding: 0.2em;
 }

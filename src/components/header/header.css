@@ -16,9 +16,9 @@
 .site-title a {
     display: block;
     padding: 0.5em;
-    color: black;
+    color: var(--black-color, red);
     font-size: 2.5em !important;
-    border-bottom: 0em solid black;
+    border-bottom: 0em solid var(--black-color, red);
 
     transition: all .5s ease-in-out;
 }

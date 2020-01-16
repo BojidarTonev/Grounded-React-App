@@ -6,7 +6,7 @@
 }
 
 .spinning-loader i {
-    background: rgb(145, 2, 5, 1);
+    background: var(--dark-red-color, red);
     border: 3px solid black;
     padding: 0.1em;
     border-radius: 70%;

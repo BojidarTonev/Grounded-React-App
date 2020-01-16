@@ -6,7 +6,7 @@
 }
 
 .index-header h2 {
-  background: black;
+  background: var(--black-color, red);
   padding-bottom: 0.5em;
   border-bottom: 3px solid #a39d87;
 }
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   max-width: 80ch;
-  background: black;
+  background: var(--black-color, red);
   text-align: center; 
   margin-bottom: 1.5em;
 }
@@ -27,7 +27,7 @@
 hr {
   height: 0.4em;
   background: #910205;
-  border: 0.13em solid black;
+  border: 0.13em solid var(--black-color, red);
 }
 
 .recent-events {
@@ -40,13 +40,13 @@ hr {
 }
 
 .recent-events-title h2{
-  background: black;
+  background: var(--black-color, red);
   padding-bottom: 0.5em;
   border-bottom: 2px solid #910205; 
 }
 
 .events-description{
-  background: black;
+  background: var(--black-color, red);
   max-width: 70ch;
 }
 

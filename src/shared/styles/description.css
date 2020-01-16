@@ -6,16 +6,16 @@
 }
 
 .description h2 {
-    background: black;
+    background: var(--black-color, red);
     padding-bottom: 0.5em;
-    border-bottom: 2px solid #910205; 
+    border-bottom: 2px solid var(--dark-red-color, red); 
 }
 
 .description span {
     max-width: var(--about-description-max-characters, 65ch);
     vertical-align: middle; 
     text-align: center; 
-    background: var(--about-description-background-color, black);
+    background: var(--about-description-background-color, var(--black-color, red));
     margin-bottom: 2em;
 
     
