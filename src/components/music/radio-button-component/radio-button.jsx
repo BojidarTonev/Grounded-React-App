@@ -13,8 +13,6 @@ class RadioButton extends Component {
         let radButton = e.currentTarget.children[0]; 
         radButton.checked = !radButton.checked;
         this.setState({active: radButton.checked});
-        console.log('state: ' + this.state.active);
-        console.log('checked:' + radButton.checked);
         this.props.styleChangedHandler();
     }
 

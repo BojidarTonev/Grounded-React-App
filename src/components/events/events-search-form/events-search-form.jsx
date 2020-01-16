@@ -49,7 +49,7 @@ class EventsSearchFrom extends Component {
 
         <input type="text" placeholder="some dj..." />
         <button type="submit" className="search-events-button">
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
         </button>
       </div>
     );

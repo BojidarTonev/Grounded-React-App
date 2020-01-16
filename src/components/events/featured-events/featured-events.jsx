@@ -36,7 +36,7 @@ class FeaturedEvents extends Component {
         ))
       : "";
     return (
-      <div>
+      <div className="featured-events-wrapper">
         <div className="description">
           <h2>Featured events</h2>
           <span>

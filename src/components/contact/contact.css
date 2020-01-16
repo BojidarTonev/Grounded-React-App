@@ -1,0 +1,86 @@
+.contact-form {
+    background: rgba(var(--black-transparent-color), 0.7);
+    border: 0px solid var(--dark-red-color);
+    border-radius: 0.5em;
+    margin: 0em 14em;
+    padding: 2em 0em;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form form h2 {
+    background: rgba(var(--black-transparent-color), 0.6);
+    border-bottom: 3px solid var(--dark-red-color);
+}
+
+.contact-form form i {
+    font-size: 2.5em;
+    padding: 0.2em;
+    background: rgba(var(--black-transparent-color), 0.6);
+    border-bottom: 3px solid var(--dark-red-color);
+
+}
+
+.form-first-inputs input {
+    border: none;
+    margin: 1em 3em;
+    height: 2.5em;
+    color: var(--gray-color);
+    background: rgba(var(--black-transparent-color), 0.6);
+    border-bottom: 3px solid var(--dark-red-color);
+}
+
+.form-first-inputs input::placeholder {
+    padding-left: 1em;
+}
+
+.form-second-inputs {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-second-inputs select {
+    border: none;
+    margin: 1em;
+    width: 140%;
+    height: 2.5em;
+    color: #a39d87;
+    background: rgba(var(--black-transparent-color), 0.6);
+    border-bottom: 3px solid var(--dark-red-color);
+}
+
+.form-second-inputs textarea {
+    border: none;
+    margin: 1em;
+    width: 140%;
+    color: #a39d87;
+    background: rgba(var(--black-transparent-color), 0.6);
+    border-bottom: 3px solid var(--dark-red-color);
+}
+
+.contact-form button[type="submit"] {
+    padding: .8em 5em;
+    margin-top: 1em;
+    border-radius: .5em;
+    border: 3px solid var(--black-color, red);
+    color: var(--black-color, red);
+    background-color: var(--dark-red-color, red);
+    font-size: .8em;
+    font-weight: 1000;
+    transition: all .2s ease-in-out;
+}
+
+.contact-form button[type="submit"]:hover {
+    border: 3px solid var(--dark-red-color, red);
+    background: var(--black-color, red);
+    color: var(--dark-red-color, red);
+}
+
+

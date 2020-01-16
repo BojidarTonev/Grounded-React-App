@@ -14,7 +14,7 @@ function Index() {
       </div>
       <div className="index-goals-wrapper">
         <div className="goal-card">
-          <i class="far fa-calendar-check"></i>
+          <i className="far fa-calendar-check"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
             quidem ea repellendus expedita, maxime et velit nesciunt consectetur
@@ -22,7 +22,7 @@ function Index() {
           </p>
         </div>
         <div className="main-goal-card">
-          <i class="fas fa-compact-disc" id="spinning-disc"></i>
+          <i className="fas fa-compact-disc" id="spinning-disc"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
             quidem ea repellendus expedita, maxime et velit nesciunt consectetur
@@ -30,7 +30,7 @@ function Index() {
           </p>
         </div>
         <div className="goal-card">
-          <i class="fas fa-podcast"></i>
+          <i className="fas fa-podcast"></i>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
             quidem ea repellendus expedita, maxime et velit nesciunt consectetur

@@ -53,7 +53,7 @@ class MusicSearchForm extends Component {
           <RadioButton title="Albums" name="button" value="Albums" styleChangedHandler={this.handleRadioStyling} />
           <RadioButton title="Tracks" name="button" value="Tracks" styleChangedHandler={this.handleRadioStyling} />
           <button type="submit" className="search-events-button" onClick={this.handleClick.bind(this)}>
-            <i class="fas fa-search"></i>
+            <i className="fas fa-search"></i>
           </button>
         </form>
       </div>
