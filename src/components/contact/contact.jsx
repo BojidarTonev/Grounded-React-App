@@ -80,7 +80,25 @@ class Contact extends Component {
               <div className="find-us-online">
                 <ul>
                   <li>
-
+                    <i class="fas fa-phone"></i>
+                    <div className="side-info">
+                      <p>Call us now</p>
+                      <small>08976652875</small>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fab fa-facebook"></i>
+                    <div className="side-info">
+                      <p>Visit our Facebook</p>
+                      <a href=""><small>link to page</small></a>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fab fa-spotify"></i>
+                    <div className="side-info">
+                      <p>Find us on Spotify</p>
+                      <a href=""><small>link to page</small></a>
+                    </div>
                   </li>
                 </ul>
               </div>
