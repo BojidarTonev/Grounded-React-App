@@ -91,6 +91,51 @@
 
 .become-part-contact {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2em;
+    transition: all 0.2s ease-in-out;
+}
+
+.become-part-contact:hover > i{
+    color: var(--dark-red-color);
+    font-size: 2em;
+}
+
+.become-part-info-wrapper {
+    height: 5.5em;
+    margin-left: 1em;
+
+    border-bottom: 3px solid var(--dark-red-color);
+    background: rgba(var(--black-transparent-color), 0.7);
+}
+
+.become-part-info-wrapper a {
+    border-radius: 0.5em;
+    border: 3px solid orange;
+    color: orange;
+    padding: 0.2em 1em;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.become-part-info-wrapper p {
+    margin-bottom: 1em;
+}
+
+.become-part-info-wrapper a:hover {
+    color: black;
+    background: orange;
+    border: 3px solid var(--black-color);
+}
+
+.become-part-contact i {
+    font-size: 1.5em;
+}
+
+.find-us-online {
+    margin-top: 5em;
 }
 
 .find-us-online ul li {
@@ -100,10 +145,31 @@
 
     
     margin-top: 1em;
+    transition: all 0.2s ease-in-out;
+}
+
+.find-us-online ul li:hover {
+    background: rgba(var(--black-transparent-color), 1);
+    width: 100%;
+
+    
+}
+
+.find-us-online ul li:hover > i {
+    font-size: 1.7em;
+    margin-left: 0.5em;
+
+    color: rgba(var(--dark-red-transparent-color), 1);
+}
+
+.find-us-online ul li:hover > .side-info{
+    width: 100%;
 }
 
 .find-us-online ul li i {
     font-size: 1.5em;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .side-info {
@@ -111,4 +177,6 @@
     margin-left: 1em;
     border-bottom: 3px solid var(--dark-red-color);
     background: rgba(var(--black-transparent-color), 0.7);
+
+    transition: all 0.2s ease-in-out;
 }
