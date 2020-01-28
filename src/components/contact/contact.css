@@ -98,9 +98,12 @@
     transition: all 0.2s ease-in-out;
 }
 
+.become-part-info-wrapper > a {
+    margin-left: 1em;
+}
+
 .become-part-contact:hover > i{
     color: var(--dark-red-color);
-    font-size: 2em;
 }
 
 .become-part-info-wrapper {
@@ -151,7 +154,6 @@
 .find-us-online ul li:hover {
     background: rgba(var(--black-transparent-color), 1);
     width: 100%;
-
     
 }
 
@@ -179,4 +181,8 @@
     background: rgba(var(--black-transparent-color), 0.7);
 
     transition: all 0.2s ease-in-out;
+}
+
+.side-info a small {
+    color: orange;
 }

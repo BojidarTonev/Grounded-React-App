@@ -71,7 +71,6 @@ class Contact extends Component {
         </form>
         <div className="second-contact-part">
               <div className="become-part-contact">
-                <i className="fas fa-user-plus"></i>
                 <div className="become-part-info-wrapper">
                   <p>FEEL LIKE TALENTED DJ?</p>
                   <a href="">JOIN US</a>

@@ -12,13 +12,22 @@
 }
 
 .artist-card-main img {
-    height: var(--about-artist-image-height, 12em);
-    width: var(--about-artist-image-width, 12em);
-    margin: -2.3em 2em 1em 0em;
+    height: 12em;
+    width: 12em;
+    flex: 0 0 12em;
+    margin: 0em 2em 1em 2em;
     border-radius: 0.4em;
     border: 5px solid black;
 
     transition: all .5s ease-in-out;
+}
+
+.description-text {
+    margin: 0.5em 3em;
+}
+
+.artist-card-main > p {
+    width: 55ch;
 }
 
 .artist-card-main img:hover {
@@ -32,14 +41,36 @@
 .artist-links-items {
     padding: 0 1em 1em 2em;
     display: flex;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.artist-links-items li:hover > a > i {
+    color: var(--dark-red-color, red);
+}
+.artist-links-items li:hover a > .info-items-wrapper p {
+    color: var(--dark-red-color, red);
+}
+.artist-links-items li:hover {
+    background: rgba(var(--black-transparent-color), 0.9);
+    border-radius: 0.2em;
 }
 
 .artist-links-items li {
-    display: flex;
     list-style: none;
-    padding-right: 2.2em;
-    margin: 1.2em;
+    padding-right: 1em;
+    margin: 1.2em 0.5em;
     height: 3em;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.artist-links-items li > a {
+    display: flex;
+}
+
+.artist-links-items li a:visited {
+    color: black;
 }
 
 .artist-links-items li:not(:last-child){
@@ -49,16 +80,26 @@
 .artist-links-items i {
     font-size: 2em;
     margin-top: 0.3em;
+    padding: 0 0 0 0.5em
 }
 
 .info-items-wrapper {
     margin-left: 1em;
 }
 
+.info-items-wrapper > p {
+    margin: 0;
+    padding: 0;
+}
+
+.info-items-wrapper > a:visited {
+    color: black;
+}
+
 .artist-info-items {
     display: flex;
-    margin-top: 2em;
-    
+    margin-top: 1em;
+    margin-left: 0em;
 }
 
 .artist-info-items li {
@@ -70,11 +111,10 @@
 
 .artist-info-items a{
     color: var(--artsit-links-items-color, black);
-    padding: 0.3em 0.6em 0.3em 0.6em;
     border-radius: 0.8em;
     background: var(--artsit-links-items-background, gray);
     border: 2px solid black;
-    padding: 0.2em 1.2em;
+    padding: 0.2em 1.5em;
 }
 
 

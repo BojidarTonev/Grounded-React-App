@@ -11,36 +11,36 @@ function Artist({ name, age, bio, imageUrl, memberSince, Albums, Events }) {
       </div>
       <div className="artist-card-main">
         <img src={imageUrl} alt="artist" />
-        <p>
-          {bio} Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-          et velit molestias amet fuga suscipit, praesentium, nemo cumque dicta
-          corrupti, cupiditate hic earum iste magnam dolor beatae minima
-          pariatur id? cupiditate hic earum iste magnam dolor beatae minima
-          pariatur id?
-        </p>
+        <p className="description-text">{bio}</p>
       </div>
       <div className="artist-links">
         <ul className="artist-links-items">
           <li>
-            <i className="fas fa-compact-disc"></i>
-            <div className="info-items-wrapper">
-              <p>13</p>
-              <p>Albums</p>
-            </div>
+            <a href="">
+              <i className="fas fa-compact-disc"></i>
+              <div className="info-items-wrapper">
+                <p>13</p>
+                <p>Albums</p>
+              </div>
+            </a>
           </li>
           <li>
-            <i className="fas fa-music"></i>
-            <div className="info-items-wrapper">
-              <p>10</p>
-              <p>Tracks</p>
-            </div>
+            <a href="">
+              <i className="fas fa-music"></i>
+              <div className="info-items-wrapper">
+                  <p>10</p>
+                  <p>Tracks</p>
+              </div>
+            </a>
           </li>
           <li>
-            <i className="far fa-calendar-plus"></i>
-            <div className="info-items-wrapper">
-              <p>7</p>
-              <p>Events</p>
-            </div>
+            <a href="">
+              <i className="far fa-calendar-plus"></i>
+              <div className="info-items-wrapper">
+                  <p>7</p>
+                  <p>Events</p>
+              </div>
+            </a>
           </li>
         </ul>
         <ul className="artist-info-items">
