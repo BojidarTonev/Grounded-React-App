@@ -2,7 +2,7 @@ import React from "react";
 import Link from "../../../shared/link/link";
 import "./artist.css";
 
-function Artist({ name, age, bio, imageUrl, memberSince, Albums, Events }) {
+function Artist({ name, age, bio, imageUrl, memberSince, Albums, Events, id }) {
   return (
     <div className="artist-card">
       <div className="artist-card-header">
@@ -17,7 +17,7 @@ function Artist({ name, age, bio, imageUrl, memberSince, Albums, Events }) {
       <div className="artist-links">
         <ul className="artist-links-items">
           <li>
-            <Link to="">
+            <Link to={`/artist/${id}`}>
               <i className="fas fa-compact-disc"></i>
               <div className="info-items-wrapper">
                 <p>13</p>

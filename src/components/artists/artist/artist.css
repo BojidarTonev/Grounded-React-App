@@ -120,4 +120,6 @@
     background: var(--artsit-links-items-background, gray);
     border: 2px solid black;
     padding: 0.2em 1.5em;
+
+    transition: all 0.2s ease-in-out !important;
 }

@@ -20,6 +20,7 @@ class Artists extends Component {
 
   render() {
     const {artists} = this.state;
+    console.log(artists);
     return (
       <div className="all-artists">
         { artists ? artists.map(artist => (
@@ -29,6 +30,7 @@ class Artists extends Component {
             bio={artist.bio}
             imageUrl={artist.imageUrl}
             memberSince={artist.memberSince.split("T")[0]}
+            id={artist._id}
           ></Artist>
         )) : ''}
       </div>

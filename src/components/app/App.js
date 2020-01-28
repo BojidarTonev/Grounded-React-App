@@ -5,6 +5,7 @@ import Main from "./main/main"
 import About from "../about/about"
 import Index from "../index/index"
 import Artists from "../artists/artists"
+import ArtistDetails from "../artists/artist-details/artist-details"
 import Footer from "../footer/footer"
 import Events from '../events/events'
 import Contact from "../contact/contact"
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/" exact render={render("Who are we?", Index)}/>
           <Route path="/about" render={render("about", About)}/>
           <Route path="/artists/all" exact render={render("Artists", Artists)}/>
+          <Route path="/artist/:id" exact render={render("Artist details", ArtistDetails)} />
           <Route path="/events/all" exact render={render("All events", Events)} />
           <Route path="/contact" render={render("Contact us", Contact)} />
           <Route path="/login" render={render("Login", Login)} />
@@ -66,6 +68,8 @@ function GetDescription(title) {
     return "Login in order to gain access to more functionality in our web-app."
   } else if (title === "Register"){
     return "Register in order to gain access to more functionality in our web-app."
+  } else if (title === "Artist details") {
+    return "Some detailed information lol"
   }
   return "Sorry, url may be broken, but page not found ;("
 }

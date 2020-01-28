@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./artist-details.css";
 
-class Artists extends Component {
+class ArtistDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        artist = {}
+        artist: {}
     };
   }
 
@@ -27,4 +27,4 @@ class Artists extends Component {
   }
 }
 
-export default Artists;
+export default ArtistDetails;
